@@ -1,0 +1,82 @@
+/* Extras.css */
+
+@import url("https://fonts.googleapis.com/css2?family=American+Typewriter&display=swap");
+
+.extras {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+/* Left side styling */
+.left-side,
+.right-side {
+  font-family: "American Typewriter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4; /* Adjust line-height for better readability */
+  letter-spacing: 0.03em;
+  color: #000000;
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+  font-size: 1rem; /* Reduced font size */
+}
+
+/* Specific styles for left-side content */
+.left-side {
+  width: 25vw; /* 40% of the viewport width */
+  padding-right: 10px;
+}
+
+/* Specific styles for right-side content */
+.right-side {
+  width: 25vw; /* 40% of the viewport width */
+  padding-left: 10px;
+  text-align: right; /* Right-align the quote */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .left-side,
+  .right-side {
+    font-size: 1rem; /* Slightly larger font for medium screens */
+  }
+
+  .left-side {
+    width: 20vw; /* Increase the width for left-side */
+  }
+
+  .right-side {
+    width: 20vw; /* Adjust right-side to be wider */
+  }
+}
+
+@media (max-width: 768px) {
+  .extras {
+    flex-direction: column; /* Stack content on small screens */
+    align-items: center;
+    padding: 10vh 0;
+  }
+
+  .left-side,
+  .right-side {
+    width: 25vw; /* Take more width on smaller screens */
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+
+  .right-side {
+    text-align: center; /* Center the quote on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .left-side,
+  .right-side {
+    font-size: 2rem; /* Slightly larger font size for very small screens */
+    width: 40vw; /* Take even more width on tiny screens */
+  }
+}

@@ -1,0 +1,37 @@
+.signature-image {
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+  left: 65vw;
+  background-image: url("../assets/Signature.svg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-top: 0rem; /* Add some spacing between the content and the signature */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .signature-image {
+    width: 15vw;
+    height: 15vh;
+    top: -50vh;
+    left: 78vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .signature-image {
+    width: 10vw;
+    height: 10vh;
+    top: 0vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .signature-image {
+    width: 8vw;
+    height: 8vh;
+    top: 0vh;
+  }
+}

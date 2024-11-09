@@ -1,0 +1,51 @@
+/* Heading.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap");
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0vh 6.5vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Left and right text styling */
+.heading-left,
+.heading-right {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 10vw; /* Responsive font size based on viewport width */
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #231f20;
+}
+
+/* Right-align the last name */
+.heading-right {
+  text-align: right;
+}
+
+/* For medium screens, adjust font size */
+@media (max-width: 1200px) {
+  .heading-left,
+  .heading-right {
+    font-size: 8vw;
+  }
+}
+
+/* For smaller screens, stack text and adjust size */
+@media (max-width: 768px) {
+  .heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5vh 0;
+  }
+
+  .heading-left,
+  .heading-right {
+    font-size: 12vw;
+  }
+}

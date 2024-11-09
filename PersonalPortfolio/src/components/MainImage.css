@@ -1,0 +1,40 @@
+/* MainImage.css */
+
+.main-image {
+  position: absolute; /* Position relative to the window */
+  width: 65vw; /* Set width as a percentage of the viewport width */
+  height: 100vh; /* Set height as a percentage of the viewport height */
+  left: 50%; /* Center the image horizontally */
+  top: 22vh; /* Position the image slightly down from the top */
+  transform: translateX(-50%); /* Adjust left position by 50% of its width */
+  background-image: url("../assets/MainImage.svg"); /* Correct path to the image */
+  background-size: contain; /* Ensure the image scales proportionally */
+  background-position: center; /* Keep the image centered */
+  background-repeat: no-repeat; /* Prevent repetition */
+  z-index: 2; /* Ensure the image stays behind other elements */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .main-image {
+    width: 50vw; /* 50% of the viewport width */
+    height: 50vh; /* Adjust height for smaller screens */
+    top: 20vh; /* Adjust vertical position */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-image {
+    width: 65vw; /* 70% of the viewport width */
+    height: 45vh; /* Adjust height further */
+    top: 25vh; /* Position the image further down for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-image {
+    width: 75vw; /* 80% of the viewport width */
+    height: 50vh; /* Adjust height for very small screens */
+    top: 30vh; /* Further adjust vertical position */
+  }
+}

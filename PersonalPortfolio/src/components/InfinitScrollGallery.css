@@ -1,0 +1,44 @@
+/* General styles for the gallery */
+.infinite-scroll-gallery {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide-container {
+  padding: 0 15px;
+}
+
+.image-wrapper {
+  width: 110%;
+  height: 500px; /* Fixed height for the image container */
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-image {
+  width: 80%; /* Full width to avoid cutting off */
+  height: 80%; /* Make sure the image fills the container */
+  object-fit: contain; /* Ensures the entire image is visible */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Ensuring the images are rotated with different angles */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .slick-slide {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slick-slide {
+    padding: 0 5px;
+  }
+}

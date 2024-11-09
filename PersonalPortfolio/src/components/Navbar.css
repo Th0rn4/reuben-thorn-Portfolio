@@ -1,0 +1,51 @@
+/* Navbar.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background-color: #fff;
+  position: fixed; /* Makes navbar stay at the top */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Full width */
+  z-index: 9999;
+}
+
+.nav-item {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #231f20;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #d9783a; /* Orange on hover */
+}
+
+.active {
+  color: #d9783a; /* Orange for the active link */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Prevent content overlap with navbar */
+body {
+  padding-top: 60px; /* Matches the navbar height */
+}
